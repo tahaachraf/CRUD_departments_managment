@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <ul class="navbar1">
+            <li><img src="logo.png" alt="Logo" width="250px" height="82px"></li>
+            <li class="gi">Groupe industriel</li>
+            <li><a href="devis.php">Ajouter un devis</a></li>
+        </ul>
+        <nav class="navbar2">
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="achat.php">Département d'achat</a></li>
+                <li><a href="production.php">Département de production</a></li>
+                <li><a href="cometmkg.php">Commercial & marketing</a></li>
+                <li><a href="administratif.php">Département administratif</a></li>
+            </ul>
+            <div class="nav-search">
+                <input type="text" placeholder="Rechercher">
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue au <span>Groupe Industriel</span></h1>
+            <p>Leader dans la gestion intégrée de nos départements : Achat, Production, Comercial & Marketing, et Administratif.</p>
+            <a href="devis.php" class="hero-btn">Créer un devis</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Départements</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Groupes de production</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Employés</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support client</div>
+        </div>
+    </section>
+
+    <section class="departments">
+        <h2>Nos Départements</h2>
+        <div class="dept-grid">
+            <a href="achat.php" class="dept-card">
+                <div class="dept-icon">&#128722;</div>
+                <h3>Département d'Achat</h3>
+                <p>Gestion des fournisseurs et des approvisionnements pour garantir la qualité de nos intrants.</p>
+                <span class="dept-link">Accéder &rarr;</span>
+            </a>
+            <a href="production.php" class="dept-card">
+                <div class="dept-icon">&#9881;</div>
+                <h3>Département de Production</h3>
+                <p>Manufacture et suivi de nos produits à travers 5 groupes de travail spécialisés.</p>
+                <span class="dept-link">Accéder &rarr;</span>
+            </a>
+            <a href="cometmkg.php" class="dept-card">
+                <div class="dept-icon">&#128200;</div>
+                <h3>Commercial & Marketing</h3>
+                <p>Développement commercial, gestion de la clientèle et stratégies marketing innovantes.</p>
+                <span class="dept-link">Accéder &rarr;</span>
+            </a>
+            <a href="administratif.php" class="dept-card">
+                <div class="dept-icon">&#128196;</div>
+                <h3>Département Administratif</h3>
+                <p>Gestion des ressources humaines, paie, et support administratif transversal.</p>
+                <span class="dept-link">Accéder &rarr;</span>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <ul class="contact">
+            <li>Avenue Habib bourgiba 4000 Sousse</li>
+            <li>contact@groupe_fadhloune.com</li>
+            <li>+21673123456</li>
+        </ul>
+    </footer>
+    <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('navLinks').classList.toggle('show');
+    });
+    </script>
+</body>
+</html>
